@@ -1,0 +1,56 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 16px;
+
+  @media screen and (min-width: $bp-dektop) {
+    padding-top: 32px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-dektop) {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      gap: 64px;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-dektop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-primary-light);
+
+    @media screen and (min-width: $bp-dektop) {
+      display: none;
+    }
+  }
+}
